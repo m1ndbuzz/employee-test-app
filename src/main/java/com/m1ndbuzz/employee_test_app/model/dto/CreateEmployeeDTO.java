@@ -1,19 +1,18 @@
 package com.m1ndbuzz.employee_test_app.model.dto;
 
-import lombok.Data;
+import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class EmployeeDTO {
+@NoArgsConstructor
+public class CreateEmployeeDTO {
 
-    private Long id;
-
+    @NotBlank(message = "Name is mandatory")
     private String name;
 
+    @NotBlank(message = "Team name is mandatory")
     private String teamName;
-
-    private String teamLeadName;
 }

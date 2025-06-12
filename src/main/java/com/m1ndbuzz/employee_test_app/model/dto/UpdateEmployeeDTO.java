@@ -1,19 +1,21 @@
 package com.m1ndbuzz.employee_test_app.model.dto;
 
-import lombok.Data;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
-public class EmployeeDTO {
+@NoArgsConstructor
+public class UpdateEmployeeDTO {
 
+    @NotNull(message = "Id is required for update")
     private Long id;
 
     private String name;
 
     private String teamName;
-
-    private String teamLeadName;
+    
 }

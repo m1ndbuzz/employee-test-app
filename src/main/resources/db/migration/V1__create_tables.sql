@@ -7,7 +7,7 @@ CREATE TABLE team (
 
 -- Table `employee`
 CREATE TABLE employee (
-    id BIGINT PRIMARY KEY,
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
     team_id BIGINT,
     CONSTRAINT fk_employee_team FOREIGN KEY (team_id) REFERENCES team(id)
