@@ -14,4 +14,4 @@ Once the app is started you can access the API docs via http://localhost:8080/sw
 I've used H2 for simplicity and you can access the pannel via http://localhost:8080/h2
 
 ##
-There is a Postman collection included to test all the endpoints within the project named 'REST API basics- CRUD'
+There is a Postman collection included to test all the endpoints within the project named `REST API basics- CRUD`
